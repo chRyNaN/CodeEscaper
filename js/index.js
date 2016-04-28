@@ -27,88 +27,88 @@
               currentLanguage = getLanguage(input);
               switch(currentLanguage){
                 default:
-                "text":
+                case "text":
                   //Try to set to the default mode
                   editor.getSession().setMode();
                   output.getSession().setMode();
                   break;
-                "markdown":
+                case "markdown":
                   editor.getSession().setMode("ace/mode/markdown");
                   output.getSession().setMode("ace/mode/markdown");
                   break;
-                "c++":
+                case "c++":
                   editor.getSession().setMode("ace/mode/c_pp");
                   output.getSession().setMode("ace/mode/c_pp");
                   break;
-                "c#":
+                case "c#":
                   editor.getSession().setMode("ace/mode/csharp");
                   output.getSession().setMode("ace/mode/csharp");
                   break;
-                "css":
+                case "css":
                   editor.getSession().setMode("ace/mode/css");
                   output.getSession().setMode("ace/mode/css");
                   break;
-                "groovy":
+                case "groovy":
                   editor.getSession().setMode("ace/mode/groovy");
                   output.getSession().setMode("ace/mode/groovy");
                   break;
-                "html":
+                case "html":
                   editor.getSession().setMode("ace/mode/html");
                   output.getSession().setMode("ace/mode/html");
                   break;
-                "java":
+                case "java":
                   editor.getSession().setMode("ace/mode/java");
                   output.getSession().setMode("ace/mode/java");
                   break;
-                "javascript"
+                case "javascript"
                   editor.getSession().setMode("ace/mode/javascript");
                   output.getSession().setMode("ace/mode/javascript");
                   break;
-                "json":
+                case "json":
                   editor.getSession().setMode("ace/mode/json");
                   output.getSession().setMode("ace/mode/json");
                   break;
-                "jsp":
+                case "jsp":
                   editor.getSession().setMode("ace/mode/jsp");
                   output.getSession().setMode("ace/mode/jsp");
                   break;
-                "less":
+                case "less":
                   editor.getSession().setMode("ace/mode/less");
                   output.getSession().setMode("ace/mode/less");
                   break;
-                "objective-c":
+                case "objective-c":
                   editor.getSession().setMode("ace/mode/objectivec");
                   output.getSession().setMode("ace/mode/objectivec");
                   break;
-                "php":
+                case "php":
                   editor.getSession().setMode("ace/mode/php");
                   output.getSession().setMode("ace/mode/php");
                   break;
-                "python":
+                case "python":
                   editor.getSession().setMode("ace/mode/python");
                   output.getSession().setMode("ace/mode/python");
                   break;
-                "ruby":
+                case "ruby":
                   editor.getSession().setMode("ace/mode/ruby");
                   output.getSession().setMode("ace/mode/ruby");
                   break;
-                "sass":
+                case "sass":
                   editor.getSession().setMode("ace/mode/sass");
                   output.getSession().setMode("ace/mode/sass");
                   break;
-                "scss":
+                case "scss":
                   editor.getSession().setMode("ace/mode/scss");
                   output.getSession().setMode("ace/mode/scss");
                   break;
-                "sql":
+                case "sql":
                   editor.getSession().setMode("ace/mode/sql");
                   output.getSession().setMode("ace/mode/sql");
                   break;
-                "swift":
+                case "swift":
                   editor.getSession().setMode("ace/mode/swift");
                   output.getSession().setMode("ace/mode/swift");
                   break;
-                "xml":
+                case "xml":
                   editor.getSession().setMode("ace/mode/xml");
                   output.getSession().setMode("ace/mode/xml");
                   break;
