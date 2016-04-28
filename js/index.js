@@ -60,7 +60,7 @@
                   editor.getSession().setMode("ace/mode/java");
                   output.getSession().setMode("ace/mode/java");
                   break;
-                case "javascript"
+                case "javascript":
                   editor.getSession().setMode("ace/mode/javascript");
                   output.getSession().setMode("ace/mode/javascript");
                   break;
