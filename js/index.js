@@ -173,7 +173,7 @@
                   case "ruby":
                   case "rb":
                         return "ruby";
-                  case "sass"
+                  case "sass":
                         return "sass";
                   case "scss":
                         return "scss";
