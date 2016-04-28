@@ -8,6 +8,7 @@
           output.setReadOnly(true);
           output.setTheme("ace/theme/monokai");
           $("#escape-btn").on("click", function(event){
+                console.log("escape clicked");
                 var str = '<pre>' + '\n' +
                           '    <code class="language-' + currentLanguage + '">' + '\n' +
                           '        ' + Code.tagEscape(output.getValue()) +
@@ -16,6 +17,7 @@
                 output.setValue(str);
           });
           $("#unescape-btn").on("click", function(event){
+                console.log("unescape clicked");
                 var str = Code.tagUnescape(output.getValue());
                 output.setValue(str);
           });
