@@ -119,7 +119,7 @@
       
       function getLanguage(input){
             if(input == null || typeof(input) !== "string") return "text";
-            int i = input.indexOf(".");
+            var i = input.indexOf(".");
             if(i == -1 || i + 1 >= input.length) return "text";
             var suffix = input.substring(i + 1, input.length);
             switch(suffix.toLowercase(){
