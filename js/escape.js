@@ -24,6 +24,15 @@
         '&#x60;': '`'
     };
     
+    var getKeys = function(obj){
+        if(Object.keys){
+            return Object.keys(obj);
+        }
+        var keys = [];
+        for (var key in obj) if (obj.hasOwnProperty(key)) keys.push(key);
+        return keys;
+    }
+    
     var createEscaper = function(map){
         var escaper = function(match){
             return map[match];
@@ -39,15 +48,6 @@
     
     var cEscape = createEscaper(escapeMap);
     var cUnescape = createEscaper(unescapeMap);
-    
-    var getKeys = function(obj){
-        if(Object.keys){
-            return Object.keys(obj);
-        }
-        var keys = [];
-        for (var key in obj) if (obj.hasOwnProperty(key)) keys.push(key);
-        return keys;
-    }
     
     var escapeCodeTag = function(string){
         var startIndex = string.indexOf('<code>');
