@@ -64,4 +64,4 @@
     window.Code.tagUnescape = cUnescape;
     window.Code.escapeCodeTag = escapeCodeTag;
     
-)();
+})();
