@@ -124,8 +124,8 @@
             var suffix = input.substring(i + 1, input.length);
             switch(suffix.toLowerCase()){
                   default:
-                  "txt":
-                  "text":
+                  case "txt":
+                  case "text":
                         return "text";
                   case "md":
                         return "markdown";
