@@ -1,12 +1,18 @@
 (function(){
-      	$(document).ready(function(){
-      	  var currentLanguage = "text";
-      	  //Set up the editors
-      	  var editor = ace.edit("editor");
+      $(document).ready(function(){
+          var currentLanguage = "text";
+          //Set up the editors
+          var editor = ace.edit("editor");
           editor.setTheme("ace/theme/monokai");
           var output = ace.edit("output");
           output.setReadOnly(true);
           output.setTheme("ace/theme/monokai");
+          $("#escape-btn").on("click", function(event){
+                
+          });
+          $("#unescape-btn").on("click", function(event){
+                
+          });
           //Listen for lost focus event on file title input
           $("#file-name").on("blur", function(event){
             //Get the type of language used and act accordingly
@@ -103,5 +109,76 @@
               }
             }
           });
-      	});
-      })();
+      });
+      
+      function getLanguage(input){
+            if(input == null || typeof(input) !== "string") return "text";
+            int i = input.indexOf(".");
+            if(i == -1 || i + 1 >= input.length) return "text";
+            var suffix = input.substring(i + 1, input.length);
+            switch(suffix.toLowercase(){
+                  default:
+                  "txt":
+                  "text":
+                        return "text";
+                  case "md":
+                        return "markdown";
+                  case "c++":
+                  case "cpp":
+                  case "h":
+                  case "cc":
+                  case "c":
+                  case "cxx":
+                        return "c++";
+                  case "cs":
+                        return "c#";
+                  case "css":
+                        return "css";
+                  case "groovy":
+                  case "gvy":
+                  case "gy":
+                  case "gsh":
+                  case "gradle":
+                        return "groovy";
+                  case "html":
+                  case "htm":
+                        return "html";
+                  case "java":
+                  case "class":
+                        return "java";
+                  case "javascript":
+                  case "js":
+                        return "javascript";
+                  case "json":
+                        return "json";
+                  case "jsp":
+                        return "jsp";
+                  case "less":
+                        return "less";
+                  case "m":
+                        return "objective-c";
+                  case "php":
+                        return "php";
+                  case "py":
+                  case "pyc":
+                  case "pyo":
+                  case "pyd":
+                        return "python";
+                  case "ruby":
+                  case "rb":
+                        return "ruby";
+                  case "sass"
+                        return "sass";
+                  case "scss":
+                        return "scss";
+                  case "sql":
+                        return "sql";
+                  case "swift":
+                        return "swift";
+                  case "xml":
+                  case "xhtml":
+                        return "xml";
+            }
+      }
+      
+})();
