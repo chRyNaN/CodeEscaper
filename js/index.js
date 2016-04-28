@@ -7,7 +7,7 @@
           var output = ace.edit("output");
           output.setReadOnly(true);
           output.setTheme("ace/theme/monokai");
-          $("#escape-btn").on("click", function(event){
+          $("#escape-btn").click(function(event){
                 console.log("escape clicked");
                 var str = '<pre>' + '\n' +
                           '    <code class="language-' + currentLanguage + '">' + '\n' +
