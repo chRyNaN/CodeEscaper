@@ -19,6 +19,7 @@
 		<!-- Open Graph meta data end -->
 		<link rel="icon" type="image/png" sizes="192x192" href="media/code favicon.png"></link>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
+		<link rel="stylesheet" type="text/css" href="css/monokai.css"></link>
 		<link rel="stylesheet" type="text/css" href="css/index.css"></link>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   </head>
@@ -52,9 +53,9 @@
     <script>
       (function(){
       	console.log("start");
-        //var editor = ace.edit("editor");
-        //editor.setTheme("ace/theme/monokai");
-        //editor.getSession().setMode("ace/mode/javascript");
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai");
+        editor.getSession().setMode("ace/mode/javascript");
       })();
     </script>
   </body>
