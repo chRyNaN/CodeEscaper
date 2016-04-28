@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CodeEscaper</title>
+		<meta charset="utf-8"></meta>
+		<meta name="viewport" content="width = device-width, initial-scale = 1"></meta>
+		<meta name="author" content="chRyNaN"></meta>
+		<meta name="keywords" content="codeescaper, code, escaper, escape, formatting, code formatting, chrynan"></meta>
+		<meta name="description" content="Escapes code characters for use in HTML."/>
+		<meta name="description" itemprop="Escapes code characters for use in HTML."/>
+		<meta name="theme-color" content="#313640">
+		<!-- Open Graph meta data -->
+		<meta property="og:url" content="http://chrynan.github.io/codeescaper"/>
+		<meta property="og:site_name" content="CodeEscaper"/>
+		<meta property="og:title" content="CodeEscaper"/>
+		<meta property="og:description" content="Escapes code characters for use in HTML."/>
+		<meta property="og:image" content=""/>
+		<meta property="og:type" content="website"/>
+		<!-- Open Graph meta data end -->
+		<link rel="icon" type="image/png" sizes="192x192" href="media/code favicon.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css"></link>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <section class="main">
+      <div id="editor"/>
+      <div id="btn-container">
+      
+      </div>
+      <div id="output-container">
+      
+      </div>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/ace.js" type="text/javascript" charset="utf-8"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/ext-elastic_tabstops_lite.js" type="text/javascript" charset="utf-8"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/ext-error_marker.js" type="text/javascript" charset="utf-8"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/ext-language_tools.js" type="text/javascript" charset="utf-8"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/theme-monokai.js" type="text/javascript" charset="utf-8"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/worker-javascript.js" type="text/javascript" charset="utf-8"/>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/mode-java.js" type="text/javascript" charset="utf-8"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/mode-javascript.js" type="text/javascript" charset="utf-8"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/mode-json.js" type="text/javascript" charset="utf-8"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/mode-html.js" type="text/javascript" charset="utf-8"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/mode-xml.js" type="text/javascript" charset="utf-8"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/mode-groovy.js" type="text/javascript" charset="utf-8"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/mode-css.js" type="text/javascript" charset="utf-8"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/mode-csharp.js" type="text/javascript" charset="utf-8"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/mode-c_cpp.js" type="text/javascript" charset="utf-8"/>
+    <script>
+      (function(){
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai");
+        editor.getSession().setMode("ace/mode/javascript");
+      })();
+    </script>
+  </body>
+</html>
