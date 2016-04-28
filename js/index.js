@@ -8,10 +8,16 @@
           output.setReadOnly(true);
           output.setTheme("ace/theme/monokai");
           $("#escape-btn").on("click", function(event){
-                
+                var str = '<pre>' + '\n' +
+                          '    <code class="language-' + currentLanguage + '">' + '\n' +
+                          '        ' + Code.tagEscape(output.getValue()) +
+                          '    </code>' +
+                          '</pre>';
+                output.setValue(str);
           });
           $("#unescape-btn").on("click", function(event){
-                
+                var str = Code.tagUnescape(output.getValue());
+                output.setValue(str);
           });
           //Listen for lost focus event on file title input
           $("#file-name").on("blur", function(event){
