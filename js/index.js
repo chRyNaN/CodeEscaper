@@ -122,7 +122,7 @@
             var i = input.indexOf(".");
             if(i == -1 || i + 1 >= input.length) return "text";
             var suffix = input.substring(i + 1, input.length);
-            switch(suffix.toLowerCase(){
+            switch(suffix.toLowerCase()){
                   default:
                   "txt":
                   "text":
