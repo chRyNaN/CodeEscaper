@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CodeEscaper</title>
-		<meta charset="utf-8"></meta>
-		<meta name="viewport" content="width = device-width, initial-scale = 1"/>
-		<meta name="author" content="chRyNaN"/>
-		<meta name="keywords" content="codeescaper, code, escaper, escape, formatting, code formatting, chrynan"/>
-		<meta name="description" content="Escapes code characters for use in HTML."/>
-		<meta name="description" itemprop="Escapes code characters for use in HTML."/>
-		<meta name="theme-color" content="#313640"/>
-		<!-- Open Graph meta data -->
-		<meta property="og:url" content="http://chrynan.github.io/CodeEscaper"/>
-		<meta property="og:site_name" content="CodeEscaper"/>
-		<meta property="og:title" content="CodeEscaper"/>
-		<meta property="og:description" content="Escapes code characters for use in HTML."/>
-		<meta property="og:image" content=""/>
-		<meta property="og:type" content="website"/>
-		<!-- Open Graph meta data end -->
-		<link rel="icon" type="image/png" sizes="192x192" href="media/code favicon.png"></link>
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"></link>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
-		<link rel="stylesheet" type="text/css" href="css/monokai.css"></link>
-		<link rel="stylesheet" type="text/css" href="css/index.css"></link>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <title>CodeEscaper</title>
+      <meta charset="utf-8"></meta>
+      <meta name="viewport" content="width = device-width, initial-scale = 1"/>
+      <meta name="author" content="chRyNaN"/>
+      <meta name="keywords" content="codeescaper, code, escaper, escape, formatting, code formatting, chrynan"/>
+      <meta name="description" content="Escapes code characters for use in HTML."/>
+      <meta name="description" itemprop="Escapes code characters for use in HTML."/>
+      <meta name="theme-color" content="#313640"/>
+      <!-- Open Graph meta data -->
+      <meta property="og:url" content="http://chrynan.github.io/CodeEscaper"/>
+      <meta property="og:site_name" content="CodeEscaper"/>
+      <meta property="og:title" content="CodeEscaper"/>
+      <meta property="og:description" content="Escapes code characters for use in HTML."/>
+      <meta property="og:image" content=""/>
+      <meta property="og:type" content="website"/>
+      <!-- Open Graph meta data end -->
+      <link rel="icon" type="image/png" sizes="192x192" href="media/code favicon.png"></link>
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"></link>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
+      <link rel="stylesheet" type="text/css" href="css/monokai.css"></link>
+      <link rel="stylesheet" type="text/css" href="css/index.css"></link>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   </head>
   <body>
     <section class="container main">
@@ -87,6 +87,9 @@
         var editor = ace.edit("editor");
         editor.setTheme("ace/theme/monokai");
         editor.getSession().setMode("ace/mode/javascript");
+        var output = ace.edit("output");
+        output.setReadOnly(true);
+        output.setTheme("ace/theme/monokai");
       })();
     </script>
   </body>
