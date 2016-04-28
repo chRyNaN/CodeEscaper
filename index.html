@@ -18,23 +18,27 @@
 		<meta property="og:type" content="website"/>
 		<!-- Open Graph meta data end -->
 		<link rel="icon" type="image/png" sizes="192x192" href="media/code favicon.png"></link>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"></link>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
 		<link rel="stylesheet" type="text/css" href="css/monokai.css"></link>
 		<link rel="stylesheet" type="text/css" href="css/index.css"></link>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <section class="main">
-      <div id="editor-container">
-      	<input id="file-name" title="File Name" type="text" placeholder="Enter file name with suffix"></input>
-      	<div id="editor" style="width: 600px; height: 600px;"></div>
-      </div>
-      <div id="btn-container">
-      	<input id="escape-button" title="Escape" type="button" class="btn btn-default">Escape</input>
-      	<input id="unescape-button" title="Unescape" type="button" class="btn btn-default">Unescape</input>
-      </div>
-      <div id="output-container">
-      	<div id="output" style="width: 600px; height: 600px;"></div>
+    <section class="container main">
+      <div class="row">
+      	<div id="editor-container">
+      	  <input id="file-name" title="File Name" type="text" placeholder="Enter file name with suffix"></input>
+      	  <div id="editor" style="width: 600px; height: 600px;"></div>
+        </div>
+        <div id="btn-container">
+      	  <button id="escape-button" title="Escape" type="button" class="btn btn-default">Escape</button>
+      	  <button id="unescape-button" title="Unescape" type="button" class="btn btn-default">Unescape</button>
+        </div>
+        <div id="output-container">
+      	  <div id="output" style="width: 600px; height: 600px;"></div>
+        </div>
       </div>
     </section>
     
