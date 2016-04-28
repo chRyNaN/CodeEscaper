@@ -25,12 +25,16 @@
   </head>
   <body>
     <section class="main">
-      <div id="editor" style="width: 600px; height: 600px;"></div>
+      <div id="editor-container">
+      	<input id="file-name" title="File Name" type="text" placeholder="Enter file name with suffix"></input>
+      	<div id="editor" style="width: 600px; height: 600px;"></div>
+      </div>
       <div id="btn-container">
-      
+      	<input id="escape-button" title="Escape" type="button" class="btn btn-default">Escape</input>
+      	<input id="unescape-button" title="Unescape" type="button" class="btn btn-default">Unescape</input>
       </div>
       <div id="output-container">
-      
+      	<div id="output" style="width: 600px; height: 600px;"></div>
       </div>
     </section>
     
