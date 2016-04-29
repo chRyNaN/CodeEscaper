@@ -65,9 +65,9 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
 }
 
 .m-btn:hover{
-	-moz-box-shadow: 0 2px 5px 0 #202020;
-	-webkit-box-shadow: 0 2px 5px 0 #202020;
-	box-shadow: 0 2px 5px 0 #202020;
+	-moz-box-shadow: 0 2px 5px 0 #000000;
+	-webkit-box-shadow: 0 2px 5px 0 #000000;
+	box-shadow: 0 2px 5px 0 #000000;
 	-moz-transition: -moz-box-shadow .25s;
 	-moz-transition: box-shadow .25s;
 	-webkit-transition: -webkit-box-shadow .25s;
