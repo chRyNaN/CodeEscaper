@@ -42,7 +42,7 @@
         var replaceRegexp = RegExp(source, 'g');
         return function(string){
             string = string == null ? '' : '' + string;
-            return testRexexp.test(string) ? string.replace(replaceRegexp, escaper) : string;
+            return testRegexp.test(string) ? string.replace(replaceRegexp, escaper) : string;
         };
     };
     
