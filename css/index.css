@@ -69,7 +69,7 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
 }
 
 #upload-file:hover{
-  background-color: #8332AC !important;
+  background-color: #4977BE !important;
 }
 
 .m-btn{
@@ -117,7 +117,7 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
 }
 
 #unescape-button:hover{
-	background-color: #4977BE !important;
+	background-color: #8332AC !important;
 }
 
 #escape-button span, #unescape-button span{
