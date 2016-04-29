@@ -3,6 +3,12 @@ body{
 }
 
 nav.navbar{
-  background-color: #232227;
-  color: #FFFFFF;
+  background-color: #232227 !important;
+  color: #FFFFFF !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.navbar-brand{
+  color: #FFFFFF !important;
 }
