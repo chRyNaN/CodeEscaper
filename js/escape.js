@@ -38,8 +38,8 @@
             return map[match];
         }
         var source = '(?:' + getKeys(map).join('|') + ')';
-        let testRegexp = RegExp(source);
-        let replaceRegexp = RegExp(source, 'g');
+        var testRegexp = RegExp(source);
+        var replaceRegexp = RegExp(source, 'g');
         return function(string){
             string = string == null ? '' : '' + string;
             return testRexexp.test(string) ? string.replace(replaceRegexp, escaper) : string;
