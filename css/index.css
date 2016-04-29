@@ -150,6 +150,14 @@ footer{
 .footer-text-container{
 	display: inline-block;
 	width: 49%;
-	height: 100%;
+	transform: translateY(50%);
+}
+
+.footer-text-container > p{
+	margin: 10px;
+}
+
+.footer-text-container > p > a{
+	color: #53dbd0;
 }
 
