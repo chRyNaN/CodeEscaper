@@ -52,11 +52,14 @@
           });
           //Listen for lost focus event on file title input
           $("#file-name").on("blur", function(event){
-            //Get the type of language used and act accordingly
+            setMode();
+          });
+      });
+      
+      function setMode(){
             var input = $("#file-name").val();
-            if(input.length > 0){
-              currentLanguage = getLanguage(input);
-              switch(currentLanguage){
+            currentLanguage = getLanguage(input);
+            switch(currentLanguage){
                 default:
                 case "text":
                   //Try to set to the default mode
@@ -144,9 +147,7 @@
                   output.getSession().setMode("ace/mode/xml");
                   break;
               }
-            }
-          });
-      });
+      }
       
       function getLanguage(input){
             if(input == null || typeof(input) !== "string") return "text";
@@ -230,6 +231,7 @@
                                           $("#file-name").val(theFile.name);
                                           var editor = ace.edit("editor");
                                           editor.setValue(e.target.result);
+                                          setMode();
                                     };
                               })(file);
                               reader.readAsText(file);
