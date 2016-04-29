@@ -35,5 +35,13 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
 
 #editor, #output{
   display: inline-block;
+  margin-top: 10px;
+}
+
+#file-name{
+  max-width: 80%;
+  font-size: 16px;
+  width: 400px;
+  margin-right: 10px;
 }
 
