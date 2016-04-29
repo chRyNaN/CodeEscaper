@@ -108,4 +108,9 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
 	background-color: #9d4dc5;
 }
 
+#escape-button span, #unescape-button span{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
 
