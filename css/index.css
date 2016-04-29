@@ -15,9 +15,9 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
   border: none !important;
 }
 
-#main{
-  padding-left: 80px;
-  padding-right: 80px;
+.main{
+  padding-left: 80px !important;
+  padding-right: 80px !important;
 }
 
 #editor-container, #btn-container, #output-container{
@@ -31,5 +31,9 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
 
 #btn-container{
   width: 19%;
+}
+
+#editor, #output{
+  display: inline-block;
 }
 
