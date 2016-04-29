@@ -157,8 +157,28 @@ footer{
 	margin: 10px;
 }
 
-.footer-text-container > p > a{
+.footer-text-container > p > a, .footer-text-container:focus{
 	color: #53dbd0;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	-moz-transition: color .25s;
+	-moz-transition: color .25s;
+	-webkit-transition: color .25s;
+	-webkit-transition: color .25s;
+	transition: color .25s;
+}
+
+.footer-text-container > p > a:hover{
+	color: #5486d1;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	-moz-transition: color .25s;
+	-moz-transition: color .25s;
+	-webkit-transition: color .25s;
+	-webkit-transition: color .25s;
+	transition: color .25s;
 }
 
 .footer-text-container > p > a > span{
