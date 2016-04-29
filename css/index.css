@@ -1,3 +1,8 @@
 body{
   background-color: #292932;
 }
+
+nav.navbar{
+  background-color: #232227;
+  color: #FFFFFF;
+}
