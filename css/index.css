@@ -51,6 +51,7 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
 	}
 	#editor-container, #btn-container, #output-container{
 		margin-bottom: 20px !important;
+		width: 100% !important;
 	}
 	#file-name{
 		max-width: 100% !important;
@@ -60,8 +61,12 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
 	#upload-file, #escape-button, #unescape-button{
 		font-size: 16px !important;
 		width: 100% !important;
+		margin: 0 !important;
 		margin-top: 10px !important;
 		margin-bottom: 10px !important;
+	}
+	#escape-button{
+		margin-bottom: 0px !important;
 	}
 }
 
