@@ -9,9 +9,9 @@
           output.setTheme("ace/theme/monokai");
           $("#escape-button").click(function(event){
                 console.log("escape clicked");
-                var str = '<pre>' + '\n' +
+                var str = '&lt;pre>' + '\n' +
                           '    <code class="language-' + currentLanguage + '">' + '\n' +
-                          '        ' + Code.tagEscape(editor.getValue()) +
+                          '        ' + Code.tagEscape(editor.getValue()) + '\n' +
                           '    </code>' + '\n' +
                           '</pre>';
                 output.setValue(str);
