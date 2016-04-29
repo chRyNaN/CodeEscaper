@@ -125,4 +125,9 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
 	padding-right: 5px;
 }
 
+#output-title{
+	font-size: 24px;
+	color: #d93344;
+}
+
 
