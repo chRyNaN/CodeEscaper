@@ -61,7 +61,7 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
   margin-right: 10px;
 }
 
-#upload-file{
+#upload-file, #upload-file:hover, #upload-file:focus{
   color: #FFFFFF;
   background-color: #5486d1;
   outline: none;
@@ -90,10 +90,22 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
 	transition: box-shadow .25s;
 }
 
-#escape-button, #unescape-button{
+#escape-button, #unescape-button #escape-button:hover, #unescape-button:hover,
+#escape-button:focus, #unescape-button:focus{
 	width: 60%;
 	font-size: 16px;
 	margin: 5px;
+	border: none;
+	outline: none;
+	color: #FFFFFF;
+}
+
+#escape-button, #escape-button:hover, #escape-button:focus{
+	background-color: #53dbd0;
+}
+
+#unescape-button, #unescape-button:hover, #unescape-button:focus{
+	background-color: #9d4dc5;
 }
 
 
