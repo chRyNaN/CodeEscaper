@@ -31,7 +31,7 @@
         var keys = [];
         for (var key in obj) if (obj.hasOwnProperty(key)) keys.push(key);
         return keys;
-    }
+    };
     
     var createEscaper = function(map){
         var escaper = function(match){
@@ -43,8 +43,8 @@
         return function(string){
             string = string == null ? '' : '' + string;
             return testRexexp.test(string) ? string.replace(replaceRegexp, escaper) : string;
-        }
-    }
+        };
+    };
     
     var cEscape = createEscaper(escapeMap);
     var cUnescape = createEscaper(unescapeMap);
@@ -58,7 +58,7 @@
             string = cEscape(string);
         }
         return string;
-    }
+    };
     
     window.Code.tagEscape = cEscape;
     window.Code.tagUnescape = cUnescape;
