@@ -2,13 +2,15 @@ body{
   background-color: #292932;
 }
 
-nav.navbar{
+nav.navbar, nav.navbar:hover, nav.navbar:focus{
   background-color: #232227 !important;
   color: #FFFFFF !important;
   outline: none !important;
   border: none !important;
 }
 
-.navbar-brand{
+.navbar-brand, .navbar-brand:hover, .navbar-brand:focus{
   color: #FFFFFF !important;
+  outline: none !important;
+  border: none !important;
 }
