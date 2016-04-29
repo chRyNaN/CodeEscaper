@@ -29,8 +29,23 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
   width: 40%;
 }
 
+@media (max-width: 767px){
+  #editor-container, #output-container{
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px){
+  #btn-container{
+    width: 19%;
+    height: 600px;
+    vertical-align: top;
+    transform: translateY(50%);
+  }
+}
+
 #btn-container{
-  width: 19%;
+  vertical-align: top;
 }
 
 #editor, #output{
@@ -74,4 +89,11 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
 	-webkit-transition: box-shadow .25s;
 	transition: box-shadow .25s;
 }
+
+#escape-button, #unescape-button{
+	width: 60%;
+	font-size: 16px;
+	margin: 5px;
+}
+
 
