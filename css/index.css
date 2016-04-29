@@ -68,6 +68,10 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
   border: none;
 }
 
+#upload-file:hover{
+  background-color: #8332AC !important;
+}
+
 .m-btn{
 	-moz-box-shadow: none;
 	-webkit-box-shadow: none;
@@ -104,8 +108,16 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
 	background-color: #53dbd0;
 }
 
+#escape-button:hover{
+	background-color: #459C9A !important;
+}
+
 #unescape-button, #unescape-button:hover, #unescape-button:focus{
 	background-color: #9d4dc5;
+}
+
+#unescape-button:hover{
+	background-color: #4977BE !important;
 }
 
 #escape-button span, #unescape-button span{
