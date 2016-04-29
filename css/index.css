@@ -14,3 +14,22 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
   outline: none !important;
   border: none !important;
 }
+
+#main{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+#editor-container, #btn-container, #output-container{
+  display: inline-block;
+  text-align: center;
+}
+
+#editor-container, #output-container{
+  width: 40%;
+}
+
+#btn-container{
+  width: 19%;
+}
+
