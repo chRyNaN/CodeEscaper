@@ -1,5 +1,7 @@
 (function(){
       $(document).ready(function(){
+          //Reset the title form
+          document.getElementById("file-name").reset();
           var currentLanguage = "text";
           //Set up the editors
           var editor = ace.edit("editor");
