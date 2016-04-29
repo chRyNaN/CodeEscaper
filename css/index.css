@@ -36,6 +36,7 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
 #editor, #output{
   display: inline-block;
   margin-top: 10px;
+  text-align: start;
 }
 
 #file-name{
@@ -43,5 +44,34 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
   font-size: 16px;
   width: 400px;
   margin-right: 10px;
+}
+
+#upload-file{
+  color: #FFFFFF;
+  background-color: #5486d1;
+  outline: none;
+  border: none;
+}
+
+.m-btn{
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-moz-transition: -moz-box-shadow .25s;
+	-moz-transition: box-shadow .25s;
+	-webkit-transition: -webkit-box-shadow .25s;
+	-webkit-transition: box-shadow .25s;
+	transition: box-shadow .25s;
+}
+
+.m-btn:hover{
+	-moz-box-shadow: 0 2px 5px 0 #202020;
+	-webkit-box-shadow: 0 2px 5px 0 #202020;
+	box-shadow: 0 2px 5px 0 #202020;
+	-moz-transition: -moz-box-shadow .25s;
+	-moz-transition: box-shadow .25s;
+	-webkit-transition: -webkit-box-shadow .25s;
+	-webkit-transition: box-shadow .25s;
+	transition: box-shadow .25s;
 }
 
