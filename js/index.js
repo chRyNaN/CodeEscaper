@@ -1,7 +1,7 @@
 (function(){
       $(document).ready(function(){
           //Reset the title form
-          document.getElementById("file-name").reset();
+          $("#file-name").val("");
           var currentLanguage = "text";
           //Set up the editors
           var editor = ace.edit("editor");
@@ -226,7 +226,9 @@
                               var reader = new FileReader();
                               reader.onload = (function(theFile){
                                     return function(e){
-                                          
+                                          $("#file-name").val(theFile.name);
+                                          var editor = ace.edit("editor");
+                                          editor.setValue(e.target.result);
                                     };
                               })(file);
                               reader.readAsText(file);
