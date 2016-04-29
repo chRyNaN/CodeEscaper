@@ -29,7 +29,11 @@
     <section class="container main">
       <div class="row">
       	<div id="editor-container">
-      	  <input id="file-name" title="File Name" type="text" placeholder="Enter file name with suffix"></input>
+      	  <input id="file-input" type="file" style="display: none;"/>
+      	  <div>
+      	    <input id="file-name" title="File Name" type="text" placeholder="Enter file name with suffix"></input>
+      	    <button id="upload-file" title="Load File" type="button" class="btn btn-default">Upload File</button>
+      	  </div>
       	  <div id="editor" style="width: 600px; height: 600px;"></div>
         </div>
         <div id="btn-container">
