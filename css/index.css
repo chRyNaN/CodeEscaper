@@ -38,7 +38,7 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
 
 @media (max-width: 767px){
 	#editor-container, #output-container{
-    		width: 100%;
+    		width: 100% !important;
   	}
 	.main{
 		padding-left: 5% !important;
@@ -50,18 +50,18 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
 		height: 350px !important;
 	}
 	#editor-container, #btn-container, #output-container{
-		margin-bottom: 20px;
+		margin-bottom: 20px !important;
 	}
 	#file-name{
-		max-width: 100%;
-		font-size: 16px;
-		padding: 6px;
+		max-width: 100% !important;
+		font-size: 16px !important;
+		padding: 6px !important;
 	}
 	#upload-file, #escape-button, #unescape-button{
-		font-size: 16px;
-		width: 100%;
-		margin-top: 10px;
-		margin-bottom: 10px;
+		font-size: 16px !important;
+		width: 100% !important;
+		margin-top: 10px !important;
+		margin-bottom: 10px !important;
 	}
 }
 
