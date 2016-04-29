@@ -42,6 +42,13 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
   }
 }
 
+@media (max-width: 600px){
+	#editor, #output{
+		width: 300px;
+		height: 400px;
+	}
+}
+
 @media (min-width: 768px){
   #btn-container{
     width: 19%;
