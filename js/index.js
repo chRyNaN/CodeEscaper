@@ -9,6 +9,32 @@
           var output = ace.edit("output");
           output.setReadOnly(true);
           output.setTheme("ace/theme/monokai");
+          
+          //Setting up the drag and drop file ability
+          $("#editor").on("dragenter", function(e){
+                e.stopPropagation();
+                e.preventDefault();
+          });
+          $("#editor").on("dragover", function(e){
+                e.stopPropagation();
+                e.preventDefault();
+          });
+          $("#editor").on("drop", function(e){
+                e.stopPropagation();
+                e.preventDefault();
+                var dt = e.dataTransfer;
+                var files = dt.files;
+                handleFiles(files);
+          });
+          //The upload file button
+          $("#upload-file").click(function(e){
+                $("#file-input").click();
+                e.preventDefault();
+          });
+          $("#file-input").on("change", function(e){
+                handleFiles($("#file-input")[0].files);   
+          });
+          
           $("#escape-button").click(function(event){
                 console.log("escape clicked");
                 var str = '<pre>' + '\n' +
@@ -125,7 +151,7 @@
             if(input == null || typeof(input) !== "string") return "text";
             var i = input.indexOf(".");
             if(i == -1 || i + 1 >= input.length) return "text";
-            var suffix = input.substring(i + 1, input.length);
+            var suffix = input.slice((input.lastIndexOf(".") - 1 >>> 0) + 2);
             switch(suffix.toLowerCase()){
                   default:
                   case "txt":
@@ -188,6 +214,26 @@
                   case "xml":
                   case "xhtml":
                         return "xml";
+            }
+      }
+      
+      function handleFiles(files){
+            if(files && files.length > 0){
+                  var file = files[0];
+                  if(!file.type.match('image.*') && !file.type.match('audio.*') && !file.type.match('video.*')){
+                        //Attempt to read the file
+                        try{
+                              var reader = new FileReader();
+                              reader.onload = (function(theFile){
+                                    return function(e){
+                                          
+                                    };
+                              })(file);
+                              reader.readAsText(file);
+                        }catch(err){
+                              console.error(err);
+                        }
+                  }
             }
       }
       
