@@ -1,12 +1,14 @@
 (function(){
+      var editor, output, currentLanguage;
+      
       $(document).ready(function(){
           //Reset the title form
           $("#file-name").val("");
-          var currentLanguage = "text";
+          currentLanguage = "text";
           //Set up the editors
-          var editor = ace.edit("editor");
+          editor = ace.edit("editor");
           editor.setTheme("ace/theme/monokai");
-          var output = ace.edit("output");
+          output = ace.edit("output");
           output.setReadOnly(true);
           output.setTheme("ace/theme/monokai");
           
