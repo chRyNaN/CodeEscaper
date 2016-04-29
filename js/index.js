@@ -19,13 +19,14 @@
                 e.stopPropagation();
                 e.preventDefault();
           });
-          $("#editor").on("drop", function(e){
+          var dropbox = document.getElementById("editor");
+          dropbox.addEventListener("drop", function(e){
                 e.stopPropagation();
                 e.preventDefault();
                 var dt = e.dataTransfer;
                 var files = dt.files;
                 handleFiles(files);
-          });
+          }, false);
           //The upload file button
           $("#upload-file").click(function(e){
                 $("#file-input").click();
