@@ -90,7 +90,7 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
 	transition: box-shadow .25s;
 }
 
-#escape-button, #unescape-button #escape-button:hover, #unescape-button:hover,
+#escape-button, #unescape-button, #escape-button:hover, #unescape-button:hover,
 #escape-button:focus, #unescape-button:focus{
 	width: 60%;
 	font-size: 16px;
