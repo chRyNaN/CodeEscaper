@@ -11,14 +11,14 @@
                 console.log("escape clicked");
                 var str = '<pre>' + '\n' +
                           '    <code class="language-' + currentLanguage + '">' + '\n' +
-                          '        ' + Code.tagEscape(output.getValue()) +
-                          '    </code>' +
+                          '        ' + Code.tagEscape(editor.getValue()) +
+                          '    </code>' + '\n' +
                           '</pre>';
                 output.setValue(str);
           });
           $("#unescape-button").click(function(event){
                 console.log("unescape clicked");
-                var str = Code.tagUnescape(output.getValue());
+                var str = Code.tagUnescape(editor.getValue());
                 output.setValue(str);
           });
           //Listen for lost focus event on file title input
