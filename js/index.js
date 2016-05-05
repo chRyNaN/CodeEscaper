@@ -8,7 +8,7 @@
           //Set up the editors
           editor = ace.edit("editor");
           editor.setOptions({
-            fontSize: "14pt"
+            fontSize: "12pt"
           });
           editor.setTheme("ace/theme/monokai");
           output = ace.edit("output");
