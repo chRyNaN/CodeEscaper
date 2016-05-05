@@ -7,6 +7,9 @@
           currentLanguage = "text";
           //Set up the editors
           editor = ace.edit("editor");
+          editor.setOptions({
+            fontSize: "14pt"
+          });
           editor.setTheme("ace/theme/monokai");
           output = ace.edit("output");
           output.setReadOnly(true);
