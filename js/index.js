@@ -14,6 +14,9 @@
           output = ace.edit("output");
           output.setReadOnly(true);
           output.setTheme("ace/theme/monokai");
+          output.setOptions({
+            fontSize: "12pt"
+          });
           
           //Setting up the drag and drop file ability
           $("#editor").on("dragenter", function(e){
