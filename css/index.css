@@ -36,6 +36,12 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
   width: 40%;
 }
 
+@media (max-width: 1160px){
+	#escape-button, #unescape-button{
+		font-size: 14px;
+	}
+}
+
 @media (max-width: 1600px){
 	#editor, #output{
 		width: 100% !important;	
