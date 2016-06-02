@@ -45,7 +45,10 @@
           });
           
           $("#escape-button").click(function(event){
-                console.log("escape clicked");
+                if(editor.getValue() === "" || typeof(editor.getValue()) === "undefined"){
+                      output.setValue("");
+                      return;
+                }
                 var str = '<pre>' + '\n' +
                           '    <code class="language-' + currentLanguage + '">' + '\n' +
                           '        ' + Code.tagEscape(editor.getValue()) + '\n' +
@@ -54,7 +57,10 @@
                 output.setValue(str);
           });
           $("#unescape-button").click(function(event){
-                console.log("unescape clicked");
+                if(editor.getValue() === "" || typeof(editor.getValue()) === "undefined"){
+                      output.setValue("");
+                      return;
+                }
                 var str = Code.tagUnescape(editor.getValue());
                 output.setValue(str);
           });
