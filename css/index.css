@@ -40,6 +40,10 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
 	#editor, #output{
 		width: 100% !important;	
 	}
+	/* Hack to force footer to stay at the bottom since other suggested ways don't work */
+	section.main{
+		margin-bottom: 15% !important;
+	}
 }
 
 @media (max-width: 767px){
