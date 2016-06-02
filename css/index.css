@@ -42,7 +42,12 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
 	}
 	/* Hack to force footer to stay at the bottom since other suggested ways don't work */
 	section.main{
-		margin-bottom: 15% !important;
+		margin-bottom: 16% !important;
+	}
+	#upload-file{
+		width: 80%;
+		margin-top: 10px;
+		margin-left: -10px;
 	}
 }
 
