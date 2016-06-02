@@ -36,6 +36,12 @@ nav.navbar, nav.navbar:hover, nav.navbar:focus{
   width: 40%;
 }
 
+@media (max-width: 1600px){
+	#editor, #output{
+		width: 100% !important;	
+	}
+}
+
 @media (max-width: 767px){
 	#editor-container, #output-container{
     		width: 100% !important;
